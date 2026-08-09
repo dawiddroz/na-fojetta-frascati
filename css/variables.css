@@ -1,0 +1,58 @@
+/* ============================================================
+   'NA FOJETTA — Frascati · Cucina romana
+   Design system — 6 token di brand (antico tinello, vintage caldo)
+   Fonte di verità dei token: questo file. Un blocco :root identico
+   è inlined nel <head> di index.html come critical CSS.
+   ============================================================ */
+
+:root {
+  /* 2 toni di fondo scuri */
+  --ink: #241710;        /* marrone notte — sfondo principale scuro */
+  --marble: #332319;     /* marrone card su fondo scuro */
+
+  /* accent + accent chiaro */
+  --gold: #C9A84C;       /* oro vecchio */
+  --gold-soft: #E8CE8B;  /* oro chiaro */
+
+  /* testo + muted */
+  --ivory: #F5EDE2;      /* crema — testo principale / sfondi chiari */
+  --muted: #8D7B6A;      /* marrone grigio — testo secondario */
+
+  /* derivati interni (non token) */
+  --ivory-deep: #EDE2D0;   /* crema più profonda per bordi/sfondi alternati */
+  --ivory-panel: #FBF6ED;  /* card su sfondi chiari */
+  --line-dark: rgba(232, 206, 139, 0.16);
+  --line-light: rgba(36, 23, 16, 0.12);
+  --shadow-card: 0 18px 44px rgba(36, 23, 16, 0.14);
+  --shadow-card-dark: 0 18px 44px rgba(0, 0, 0, 0.34);
+
+  /* tipografia */
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+
+  /* layout */
+  --header-h: 76px;
+  --header-h-mobile: 64px;
+  --container: 1180px;
+  --radius: 4px;
+  --radius-lg: 10px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* z-index ladder */
+  --z-header: 1000;
+  --z-menu: 990;
+  --z-progress: 1001;
+  --z-sticky-cta: 980;
+  --z-cookie: 1100;
+  --z-lightbox: 1200;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}

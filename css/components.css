@@ -1581,3 +1581,49 @@
   }
 }
 
+
+/* ===== MOBILE COMPATTO + HERO VIVO (feedback 09/08/2026) ===== */
+@media (max-width: 767px) {
+  .section { padding-top: 56px !important; padding-bottom: 56px !important; }
+  .hero { padding-top: calc(var(--header-h, 72px) + 1.25rem) !important; padding-bottom: 3.75rem !important; min-height: 100svh; }
+  .hero__inner, .hero-content { padding-top: calc(var(--header-h, 72px) + 1.5rem) !important; padding-bottom: 3rem !important; }
+  .hero__media img, .hero-media img, .hero__bg img, .hero-bg {
+    animation: heroMediaFadeIn 1.6s 0.25s cubic-bezier(0.22,1,0.36,1) both !important;
+  }
+  @keyframes heroMediaFadeIn {
+    from { opacity: 0; transform: scale(1.04); }
+    to { opacity: 1; transform: scale(1); }
+  }
+}
+
+/* ===== HERO CONTENUTO COMPATTO MOBILE (feedback 09/08/2026) ===== */
+@media (max-width: 767px) {
+  .hero__title, .hero-title {
+    font-size: clamp(1.9rem, 9vw, 2.6rem) !important;
+    margin-top: 14px !important;
+    margin-bottom: 12px !important;
+  }
+  .hero__sub, .hero-sub, .hero__status, .hero-status {
+    margin-bottom: 14px !important;
+    font-size: 0.98rem !important;
+  }
+  .hero__cta, .hero-cta {
+    gap: 10px !important;
+    margin-bottom: 22px !important;
+  }
+  .hero__cta .btn, .hero-cta .btn { padding: 12px 20px !important; }
+  .hero__stats, .hero-stats {
+    gap: 18px !important;
+    padding-top: 16px !important;
+  }
+  .hero__badge, .hero-badge { font-size: 0.66rem !important; padding: 7px 14px !important; }
+  .stat-number, .stat-num, .hero__stats .stat .stat-number { font-size: 1.7rem !important; }
+}
+
+/* ===== HERO FIT PERFETTO MOBILE (rifinitura 09/08/2026) ===== */
+@media (max-width: 767px) {
+  .hero__inner, .hero-content { padding-bottom: 2.25rem !important; }
+  .hero__stats, .hero-stats { gap: 14px !important; }
+  .stat-number, .stat-num, .hero__stats .stat .stat-number { font-size: 1.55rem !important; }
+  .hero__sub, .hero-sub { margin-bottom: 12px !important; }
+}
